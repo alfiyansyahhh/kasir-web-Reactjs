@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,800;1,300;1,400;1,500&display=swap");
+
+
+.Cart {
+    width: 100%;
+    height: 1000px;
+    font-family: "Rubik", sans-serif;
+}
+
+.Notif-Cart{
+    font-family: "Rubik", sans-serif;
+    font-size: 25px;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 1px 1px 10px #cccccc;
+    height: 100px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+}
+.label{
+    width: 60%;
+    text-align: end;
+}
+.ntf{
+    width: 30%;
+    margin-left: 5px;
+    margin-top: -2px;
+    text-align: start;
+}
+.ntf2{
+    font-size: 18px;
+    margin-top: -29px;
+    margin-left: 7px;
+    color: white;
+}
+
+.Item-Cart{
+    overflow: auto;
+    height: 890px;
+    margin-top: 0.5em;
+}
+
+.Cart-list{
+    display: flex;
+    width: 100%;
+}
+.l1{
+    width: 40%;
+    padding: 30px;
+    cursor: pointer;
+}
+.Cart-picture{
+    border-radius: 20px;
+}
+.l2{
+    width: 60%;
+    padding: 20px;
+    font-size: 20px;
+}
+.Cart-name{
+    margin-top: 5px;
+    font-size: 23px;
+    cursor: pointer;
+}
+.b{
+    display: flex;
+}
+.c{
+    width: 60%;
+}
+.Tombol{
+    display: flex;
+    width: 90%;
+    text-align: center;
+    border: #82DE3A  0.5px solid;
+    background-color: #d7fcb99c;
+    margin-top:50px;
+}
+.Minus{
+    width: 35%;
+    font-size: 25px;
+    color: #82DE3A;
+    cursor: pointer;
+}
+.Minus:hover{
+    background-color: #afe686; 
+    color: white;
+}
+.Qty{
+    width: 30%;
+    color: white;
+
+}
+.Qty input{
+    width: 40px;
+    text-align: center;
+    border-color: transparent;
+    background-color: white;
+    border-right: #82DE3A  0.5px solid;
+    border-left: #82DE3A  0.5px solid;
+    outline: none;
+    color: #82DE3A;
+}
+.Plus{
+    width: 35%;
+    font-size: 25px;
+    color: #82DE3A;
+    cursor: pointer;
+}
+.Plus:hover{
+    background-color: #afe686; 
+    color: white;
+}
+.Cart-price{
+    width: 30%;
+    font-size: 18px;
+    margin-top: 60px;
+    cursor: pointer;
+}
+
+.Menu-cart{
+    padding-left: 45px;
+}
+.Total{
+    font-size: 24px;
+    line-height: 31px;
+    margin-top: 1em;
+    font-weight: bold;
+    color: #000000;
+}
+.Info{
+    margin-top: 16px;
+}
+
+.Checkout{
+    text-align: center;
+    padding: 15px;
+    width: 401px;
+    height: 61px;
+    background: #57CAD5;
+    font-size: 25px;
+    line-height: 33px;
+    color: #FFFFFF;
+    cursor: pointer; 
+
+    
+}
+.Checkout:hover{
+    background-color:  #29a7b3;
+}
+
+.Cancel{
+    text-align: center;
+    padding: 15px;
+    width: 401px;
+    height: 61px;
+    background: #F24F8A;
+    font-size: 25px;
+    line-height: 33px;
+    color: #FFFFFF;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.Cancel:hover{
+   background-color: #d14478;
+}
+
+.Total{
+    display: flex;
+}
+.t1{
+    width: 30%;
+    text-align: start;
+}
+.t2{
+    width: 70%;
+    text-align: end;
+    padding-right: 50px;
+}

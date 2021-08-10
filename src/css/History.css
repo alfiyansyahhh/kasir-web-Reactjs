@@ -1,0 +1,11 @@
+.History{
+    display: flex;
+    width: 100%;
+    position: absolute;
+}
+.Article-history{
+    width: 100%;
+    background-color: #eaeef5bb;
+    text-align: center;
+    padding: 105px;
+}

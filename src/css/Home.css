@@ -1,0 +1,22 @@
+.Navbar-Home{
+    display: flex;
+    width: 100%;
+    position: absolute;
+}
+
+.Navbar-Home .N1{
+    width: 75%;
+}
+.Main {
+    display: flex;
+    width: 100%;
+}
+
+.Article{
+    width: 100%;
+}
+
+.Navbar-Home .N2{
+    display: flex;
+    width: 25%;
+}
