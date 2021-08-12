@@ -31,6 +31,11 @@
     padding-right: 50px;
     text-align: end;
 }
+@media screen and (max-width: 1366px) {
+    .Navbar {
+        height: 80px;
+    }
+}
 
 /* .Search{
     margin-right: -190px;

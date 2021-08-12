@@ -9,3 +9,19 @@
     text-align: center;
     padding: 105px;
 }
+
+@media screen and (max-width: 1366px) {
+    .Article-history{
+        width: 100%;
+        background-color: #eaeef5bb;
+        text-align: center;
+    }
+    .Article-history .test{
+        max-width: 940px;
+        text-align: center;
+    }
+    .Article-history .test2{
+        max-width: 310px;
+        text-align: center;
+    }
+}

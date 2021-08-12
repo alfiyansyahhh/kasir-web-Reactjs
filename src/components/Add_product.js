@@ -16,7 +16,6 @@ const ModalExample = (props) => {
   const test = () => {
     alert('hai')
   }
-
   return (
     <div>
       <img src={add} alt="" onClick={toggle} />

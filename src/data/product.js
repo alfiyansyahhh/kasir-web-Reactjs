@@ -19,7 +19,7 @@ let product = [
     },
     {
         id: 4,
-        picture: 'https://i.ibb.co/9nSSdWC/redvelvet-latte.png',
+        picture: 'https://i.postimg.cc/pr52GJxC/cappucino.png',
         product_name:'Red Velvet Latte',
         price: 33000,
     },
@@ -44,7 +44,7 @@ let product = [
     {
         id: 8,
         picture: 'https://i.postimg.cc/LsshkfqC/salmon.png',
-        product_name:'Salmon Truffle Teriyaki',
+        product_name:'Salmon Truffle',
         price: 60000,
     },
     {

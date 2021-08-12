@@ -3,31 +3,24 @@ import "../css/Menu.css";
 import Add from "./Add_product";
 import fork from '../svg/fork.svg'
 import clipboard from '../svg/clipboard.svg'
+import {Link} from 'react-router-dom'
 
 class Menu extends React.Component {
     render() {
-    const history = (page) => {
-        this.props.page(page)
-    }
-    const home = (page) => {
-        this.props.page(page)
-    }
       return (
         <div className="Menu1">
-            <div className="M1">
-                <a href="/">
-                    <img src={fork} alt="" onClick={() => home("Foods Items")} />
-                </a>
-            </div>
-            <div className="M2">
-                <a href="/History">
-                    <img src={clipboard} alt="" onClick={() => history("History")} />
-                </a>   
-            </div>
-            <div className="M3">
-                <Add />
-            </div>
+        <div className="M1">
+            <Link to="/">
+                <img src={fork} alt="" />
+            </Link>
         </div>
+        <div className="M2">
+            <Link to="/History"> <img src={clipboard} alt="" /></Link>
+        </div>
+        <div className="M3">
+            <Add />
+        </div>
+    </div>
       );
     }
 }

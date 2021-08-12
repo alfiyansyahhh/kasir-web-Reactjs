@@ -1,128 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap');
 
-.Product{
-    margin-top: 0.1em;
-    background-color: #eaeef5bb;
-    display: grid;
-    grid-column-gap: 0.5em;
-    grid-template-columns: auto auto auto;
-    grid-row-gap: 3em;
-    padding: 3em;
-    padding-top: 3em;
-    height: 72em;
-}
 
+.product{
+    overflow: scroll;
+    height: 56.7em;
+}
 .Product-card{
-    margin-left: 1em;
+    background-color: #eaeef5bb;
+    width: 100%;
+    justify-content: space-around; 
+ }
+.product-list{
+    width: 100%;
+    padding: 30px;   
 }
 .picture{
-    border-top-left-radius: 1.3em;
-    border-top-right-radius: 1.3em;
-    width: 22em;
-    height: 16em;
-    cursor: pointer;
+    width: 95%;
+    justify-content: space-around
 }
-.picture:hover{
-    border: transparent 5px solid;
-}
-
 .name{
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Rubik';
     font-size: 25px;
 }
 .price{
     font-family: 'Rubik', sans-serif;
     font-size: 25px;
-    line-height: 33px;
     color: black;
     font-weight: bold;
 }
 
 @media screen and (max-width: 1366px) {
-    .Product{
-        margin-top: 0.1em;
-        background-color: #eaeef5bb;
-        display: grid;
-        grid-column-gap: 2em;
-        grid-template-columns: auto auto auto;
-        grid-row-gap: 2em;
-        padding: 2em;
-        padding-top: 2em;
-        height: 66em;
+    .picture{
+        width: 100%;
+    }
+    .product-list{
+        padding: 20px;   
     }
     .name{
-        font-family: 'Rubik', sans-serif;
+        font-family: 'Rubik';
         font-size: 20px;
     }
     .price{
         font-family: 'Rubik', sans-serif;
         font-size: 20px;
-        line-height: 33px;
         color: black;
         font-weight: bold;
     }
-    .picture{
-        border-top-left-radius: 1.3em;
-        border-top-right-radius: 1.3em;
-        width: 15em;
-        height: 13em;
-        cursor: pointer;
+    .product{
+        overflow: scroll;
+        height: 38.5em;
     }
-    .Menu-cart{
-        padding-left: 25px;
-    }
-    .Checkout{
-        width: 301px;
-        height: 61px;
-    }
-    .Cancel{
-        width: 301px;
-        height: 61px;
-    }
-    .t2{
-        text-align: center;
-        font-size: 17px;
-        padding-right: 10px;
-    }
-    .Cart-picture{
-        width: 80px;
-        height: 80px;
-    }
-    .Cart-name{
-        font-size: 15px;
-    }
-    .Cart-price{
-        font-size: 13px;
-        margin-top: 40px;
-        margin-left: 10px;
-    }
-    .Qty input{
-        width: 30px;
-        height: 29px;
-        border-bottom: #82DE3A  0.1px solid ;
-    }
-    .Tombol{
-        margin-top: 33px;
-        height: 30px;
-        font-size: 15px;
-        width: 90%;
-
-    }
-    .Minus{
-        font-size: 20px;
-    }
-    .Plus{
-        font-size: 20px;
-    }
-    .Item-Cart{
-        height: 800px;
-    }
-    .l1{
-        width: 30%;
-    }
-    .l2{
-        width: 70%;
-        margin-left: 10px;
-    }
-
-  }
+}

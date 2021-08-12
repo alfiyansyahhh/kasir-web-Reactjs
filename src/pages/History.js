@@ -10,34 +10,20 @@ import Card4 from '../svg/card4.svg'
 
 
 class About extends React.Component{
-    constructor(props){
-        super(props)
-        this.state = {
-           page: "History"
-        }
-    }
-    render(){
-        const getpage2 = (page) => {
-            this.setState({
-                page: page
-            })
-    
-        }  
+    render(){ 
         return(
-        <div>
-        <Navbar page3={this.state.page} />               
+        <div fluid={true}>
+        <Navbar title="History"/>               
         <main className="History">
-            <Menu page={getpage2}/>    
+            <Menu />    
             <article className="Article-history">
-                <img src={Card1} alt=""/>
-                <img src={Card2} alt=""/>
-                <img src={Card3} alt=""/>
-                <img src={Card4} alt=""/>
+                <img className="test2" src={Card1} alt=""/>
+                <img className="test2" src={Card2} alt=""/>
+                <img className="test2" src={Card3} alt=""/>
+                <img className="test" src={Card4} alt=""/>
             </article>         
-        </main> 
-            
-            
-        </div>
+        </main>  
+        </ div>
                 
         
         )

@@ -9,8 +9,7 @@ class Home extends React.Component {
     constructor(props){
         super(props)
         this.state = {
-           cart: [],
-           page: 'Food Items'
+           cart: []
         }
        
     }
@@ -98,19 +97,15 @@ class Home extends React.Component {
             
         }
     }
-    const getpage = (page1) => {
-        this.setState({
-            page: page1
-        })
-    }
+ 
      
     return (
       <div className="Home">
           <div className="Navbar-Home">
               <div className="N1">
-                <Navbar page3={this.state.page} />
+                <Navbar title="Food Items" />
                 <div className="Main">
-                    <Menu page={getpage} />
+                    <Menu />
                     <div className="Article">
                         <Product data={getfromproduct} />
                     </div>           

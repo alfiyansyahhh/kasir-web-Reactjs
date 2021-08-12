@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import "../css/Cart.css"
 import  {numberWithCommas} from "../numberwithcomas";
 import ntsf from '../svg/ntf.svg'
+import { Row, Col } from 'reactstrap';
+import Empty from '../svg/empty.svg'
 
 export class Cart extends Component {   
     
@@ -34,41 +36,37 @@ export class Cart extends Component {
                         <p className="ntf2">{ntf}</p>
                     </div>
                 </div>
-                <div className="Item-Cart">
-                 {cart.map((e) =>{
-                    return(
-                        <div className="Cart-card">
-                            <div className="Cart-list" id={e.id}>
-                                <div className="l1">
-                                    <img className="Cart-picture" width="150px" height="120px" src={e.picture} alt=""/>
-                                </div>
-                                <div className="l2">
-                                    <div className="Cart-name">{e.product_name}</div>
-                                    <div className="b">
-                                        <div className="c">
-                                            <div className="Tombol">
-                                                <div className="Minus" onClick={() => minQty(e)}>-</div>
-                                                <div className="Qty"><input type="text" value={e.qty}/></div>
-                                                <div className="Plus" onClick={() => plusQty(e)}>+</div>         
-                                              </div>
-                                        </div>
-                                        <div className="Cart-price">Rp.{numberWithCommas(e.qty * e.price)}</div>
-                                    </div>
-                                </div>  
-                            </div>
-                        </div>       
-                    )
-                    
-                 })}
-                </div>
+                {ntf === 0 ?(<div className="Item-Cart"><img className="Empty-cart" src={Empty} alt="" /> </div>):(
+                   <div className="Item-Cart">
+                   {cart.map((e) =>{
+                      return(
+                          <div className="Cart-card">
+                              <Row className="Cart-list" id={e.id}>
+                                  <Col lg="5" md="5" xs="2" className="l1">
+                                      <img className="Cart-picture" width="150px" height="120px" src={e.picture} alt=""/>
+                                  </Col>
+                                  <Col xs="7" md="7" sm="7" lg="7" className="l2">
+                                      <Col className="Cart-name">{e.product_name}</Col>
+                                      <div className="Tombol">
+                                          <div className="Minus" onClick={() => minQty(e)}>-</div>
+                                          <div xs="2" className="Qty"><input type="text" value={e.qty}/></div>
+                                          <div xs="2" className="Plus" onClick={() => plusQty(e)}>+</div>        
+                                      </div>
+                                      <div className="Cart-price">Rp.{numberWithCommas(e.qty * e.price)}</div> 
+                                  </Col>  
+                              </Row>
+                          </div>       
+                      )
+                      
+                   })}
+                  </div>  
+                )}
                 <div className="Menu-cart">
-                    <div className="Total">
-                        <div className="t1">Total:</div>
-                        <div className="t2">Rp. {numberWithCommas(total)}</div>    
-                    </div>
+                    <div className="t1">Total:</div>
+                    <div className="t2">Rp. {numberWithCommas(total)}</div>    
                     <div className="Info">*Belum termasuk ppn</div>
-                    <div className="Checkout">Checkout</div>
-                    <div className="Cancel" onClick={cancel}>Cancel</div>
+                    <div className="Checkout" >Checkout</div>
+                    <div className="Cancel" onClick={cancel}>Cancel</div>                  
                 </div>
             </div>
         )
