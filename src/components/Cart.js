@@ -36,7 +36,7 @@ export class Cart extends Component {
                         <p className="ntf2">{ntf}</p>
                     </div>
                 </div>
-                {ntf === 0 ?(<div className="Item-Cart"><img className="Empty-cart" src={Empty} alt="" /> </div>):(
+                {ntf === 0 ?(<div className="Item-Empty"><img className="Empty-cart" src={Empty} alt="" /> </div>):(
                    <div className="Item-Cart">
                    {cart.map((e) =>{
                       return(
@@ -48,9 +48,9 @@ export class Cart extends Component {
                                   <Col xs="7" md="7" sm="7" lg="7" className="l2">
                                       <Col className="Cart-name">{e.product_name}</Col>
                                       <div className="Tombol">
-                                          <div className="Minus" onClick={() => minQty(e)}>-</div>
+                                          <div className="Minus" onClick={() => minQty(e.id)}>-</div>
                                           <div xs="2" className="Qty"><input type="text" value={e.qty}/></div>
-                                          <div xs="2" className="Plus" onClick={() => plusQty(e)}>+</div>        
+                                          <div xs="2" className="Plus" onClick={() => plusQty(e.id)}>+</div>        
                                       </div>
                                       <div className="Cart-price">Rp.{numberWithCommas(e.qty * e.price)}</div> 
                                   </Col>  

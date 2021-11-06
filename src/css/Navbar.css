@@ -2,14 +2,13 @@
 
 .Navbar {
   margin: 0;
-  padding: 0;
+  padding: 20;
   background-color: white;
   box-shadow: 1px 1px 10px #cccccc;
   display: flex;
   align-items: center;
   font-family: "Rubik", sans-serif;
   justify-content: center;
-  height: 100px;
   font-size: 30px;
 }
 
@@ -31,12 +30,3 @@
     padding-right: 50px;
     text-align: end;
 }
-@media screen and (max-width: 1366px) {
-    .Navbar {
-        height: 80px;
-    }
-}
-
-/* .Search{
-    margin-right: -190px;
-} */

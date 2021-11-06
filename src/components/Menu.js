@@ -6,21 +6,23 @@ import clipboard from '../svg/clipboard.svg'
 import {Link} from 'react-router-dom'
 
 class Menu extends React.Component {
+   
     render() {
+  
       return (
         <div className="Menu1">
-        <div className="M1">
-            <Link to="/">
-                <img src={fork} alt="" />
-            </Link>
+            <div className="M1">
+                <Link to="/">
+                    <img src={fork} alt="" />
+                </Link>
+            </div>
+            <div className="M2">
+                <Link to="/History"> <img src={clipboard} alt="" /></Link>
+            </div>
+            <div className="M3">
+                <Add input={this.props.input} formAdd={this.props.formAdd} submitAdd={this.props.submitAdd}/>
+            </div>
         </div>
-        <div className="M2">
-            <Link to="/History"> <img src={clipboard} alt="" /></Link>
-        </div>
-        <div className="M3">
-            <Add />
-        </div>
-    </div>
       );
     }
 }

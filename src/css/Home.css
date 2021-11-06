@@ -1,29 +1,15 @@
-.Navbar-Home{
+
+.Home{
+    height: 100vh;
     display: flex;
-    width: 100%;
-    position: absolute;
 }
-
-.Navbar-Home .N1{
-    width: 100%;
-}
-.Main {
+.home-kiri{
+    width: 70%;
+    height: 100vh;
     display: flex;
-    width: 100%;
+    flex-direction: column;
 }
-
-.Article{
-    width: 100%;
-}
-
-.Navbar-Home .N2{
+.main{
     display: flex;
-    width: 40%;
-}
-
-@media screen and (min-width: 1900px) {
-    .Navbar-Home .N2{
-        display: flex;
-        width: 30%;
-    }
+    height: 87% !important;
 }

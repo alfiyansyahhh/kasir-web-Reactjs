@@ -3,10 +3,10 @@
 
 .product{
     overflow: scroll;
-    height: 56.7em;
+    height: 100%;
+    background-color: #eaeef5bb;
 }
 .Product-card{
-    background-color: #eaeef5bb;
     width: 100%;
     justify-content: space-around; 
  }
@@ -16,38 +16,18 @@
 }
 .picture{
     width: 95%;
-    justify-content: space-around
+    justify-content: space-around;
+    cursor: pointer;
 }
 .name{
     font-family: 'Rubik';
-    font-size: 25px;
+    font-size: 15px;
+   margin-top: 10px;
 }
 .price{
     font-family: 'Rubik', sans-serif;
-    font-size: 25px;
+    font-size: 18px;
     color: black;
     font-weight: bold;
 }
 
-@media screen and (max-width: 1366px) {
-    .picture{
-        width: 100%;
-    }
-    .product-list{
-        padding: 20px;   
-    }
-    .name{
-        font-family: 'Rubik';
-        font-size: 20px;
-    }
-    .price{
-        font-family: 'Rubik', sans-serif;
-        font-size: 20px;
-        color: black;
-        font-weight: bold;
-    }
-    .product{
-        overflow: scroll;
-        height: 38.5em;
-    }
-}

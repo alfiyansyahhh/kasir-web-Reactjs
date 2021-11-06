@@ -9,112 +9,186 @@ class Home extends React.Component {
     constructor(props){
         super(props)
         this.state = {
-           cart: []
+           cart: [],
+           products: [
+            {
+                id: 1,
+                picture: 'https://i.postimg.cc/KvmGrxLR/espresso.png',
+                product_name:'Espresso',
+                price: 10000,
+            },
+            {
+                id: 2,
+                picture: 'https://i.postimg.cc/59KYss5B/coffee-latte.png',
+                product_name:'Cofee Latte',
+                price: 15000,
+            },
+            {
+                id: 3,
+                picture: 'https://i.postimg.cc/pr52GJxC/cappucino.png',
+                product_name:'Cappucino',
+                price: 5000,
+            },
+            {
+                id: 4,
+                picture: 'https://i.postimg.cc/pr52GJxC/cappucino.png',
+                product_name:'Red Velvet Latte',
+                price: 33000,
+            },
+            {
+                id: 5,
+                picture: 'https://i.postimg.cc/5NwHffd3/chocorum.png',
+                product_name:'Choco Rhum',
+                price: 28000,
+            },
+            {
+                id: 6,
+                picture: 'https://i.postimg.cc/pXNhNp7r/blackforest.png',
+                product_name:'Black Forest',
+                price: 30000,
+            },
+            {
+                id: 7,
+                picture: 'https://i.postimg.cc/RZ4WF2vz/chickenkatsu.png',
+                product_name:'Chicken Katsu',
+                price: 60000,
+            },
+            {
+                id: 8,
+                picture: 'https://i.postimg.cc/LsshkfqC/salmon.png',
+                product_name:'Salmon Truffle',
+                price: 60000,
+            },
+            {
+                id: 9,
+                picture: 'https://i.postimg.cc/bvFrmJkz/wiener.png',
+                product_name:'Wiener Schnitzel',
+                price: 69000,
+            }],
+
+            hide: false,
+            formAdd: {
+               picture: "",
+               product_name: "",
+               price:"",
+               category:""
+           }
         }
        
     }
 
   render() {
+    const {products, cart} = this.state
 
-    const cekCart = (data) => {
-    const find = this.state.cart.find((e) => {
-        if(e.id === data.id){
-            return e
-        }
-    })
-    return find  
-    }
-
-    const plusQty = (data) => {
-        const newCart = this.state.cart.map((e) => {
-             if(e.id === data.id){
-                return{
-                    id: e.id,
-                    picture: e.picture,
-                    product_name: e.product_name,
-                    price: e.price,
-                    qty: e.qty + 1
-                }
-             } else{
-                 return e
-             }
-         })
-         this.setState({
-            cart: newCart
-          })
-          
-     }
-    const del = (data) => {
-        const newCart = this.state.cart.filter((e) => {
-            if(e.id !== data.id)
-            return e
+    const updateCart = ()=>{
+        this.setState({
+            cart : cart
         })
-        this.setState({
-            cart: newCart
-          })
-        
     }
-    const cancel = () => {
+
+    const updateproduct = () =>{
         this.setState({
-            cart: []
-          })
-          
+            products : products
+        })
     }
-    const minQty = (data) => {
-        const newCart = this.state.cart.map((e) => {
-             if(e.id === data.id){
-                return{
-                    id: e.id,
-                    picture: e.picture,
-                    product_name: e.product_name,
-                    price: e.price,
-                    qty: e.qty - 1
-                }
-             } else{
-                 return e
-             }
-         })
-         if(cekCart(data).qty > 1){
-            this.setState({
-                cart: newCart
-              })
-              
-        } else if (cekCart(data).qty <= 1){
-           del(data)
-           
-        }       
-     }
 
+    const checkdata  = (data) =>{
+        const find = cart.find((e) => {
+            if (e.id === data){
+                return e
+            }
+        })
+        return find
+    }
 
-    const getfromproduct = (data) => {
-        let addQty = {...data, qty:1}
-        if(cekCart(data) === undefined){
-            this.setState({
-                cart:[...this.state.cart, addQty]
-            })
-        } else {
-            plusQty(data)
-            
+    const addQty = (data) =>{
+        const find = cart.findIndex((e=> e.id === data))
+        cart[find].qty +=1
+    }
+
+    const btnAdd = (data) =>{
+        addQty(data)
+        updateCart()
+    }
+
+    const delCart = (data) =>{
+        const newcart = checkdata(data)
+        cart.splice([newcart],1)
+        updateCart()
+    }
+
+    const minQty = (data) =>{
+        const x = cart.findIndex((e=> e.id === data))
+        cart[x].qty <= 1 ? (
+            delCart(data)
+        ): (cart[x].qty -=1 )
+        updateCart()
+    }
+
+    const cancel = () =>{
+        this.setState({cart: []});
+    }
+
+    const addCart = (id) =>{
+        const find = products.find((e) => {
+            if(e.id === id){
+                return e
+            }
+        })
+        const check = checkdata(id)
+        if (check === undefined){
+            const qty = {
+                ...find, qty : 1
+            }
+            cart.push(qty)
+        }else {
+            addQty(id)
         }
+        updateCart()
     }
- 
+
+    const addProduct = (result) =>{
+      products.push(result)
+      updateproduct()
+    }
+
+    const hide = () => {
+        this.setState({
+            hide: !this.state.hide
+        })
+    }
+
+    const input = (e) => {
+        this.setState({
+            ...this.state, formAdd: {
+                ...this.state.formAdd,
+                [e.target.name] :e.target.value
+            }
+        })
+    }
+
+    const submitAdd = (e) => {
+        e.preventDefault()
+        addProduct(this.state.formAdd)
+    }
+
      
     return (
       <div className="Home">
-          <div className="Navbar-Home">
-              <div className="N1">
-                <Navbar title="Food Items" />
-                <div className="Main">
-                    <Menu />
-                    <div className="Article">
-                        <Product data={getfromproduct} />
-                    </div>           
-                </div>
-              </div>
-              <div className="N2">
-                <Cart data={this.state.cart} btnPlusQty={plusQty} btnMinQty={minQty} cancel={cancel} />
-              </div>
-          </div>
+        <div className="home-kiri">
+            <Navbar title="Food Items" hide={hide} />
+            {this.state.hide===false?(   
+            <div className="main">
+                <Menu input={input} formAdd={this.state.formAdd} submitAdd={submitAdd} />    
+                <Product addCart={addCart} product={products}/>
+            </div>
+            ):(    
+                <div className="main">        
+                <Product addCart={addCart} product={products} />
+            </div>
+            )}           
+        </div>
+        <Cart data={this.state.cart} btnPlusQty={btnAdd} btnMinQty={minQty} cancel={cancel} />
       </div>
     );
   }
