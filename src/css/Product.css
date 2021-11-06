@@ -11,13 +11,13 @@
     justify-content: space-around; 
  }
 .product-list{
-    width: 100%;
+    width: 30%;
     padding: 30px;   
         background-color: blueviolet;  
     margin-top: 20px;
 }
 .picture{
-    width: 25%;
+    width: 95%;
     justify-content: space-around;
     cursor: pointer;
 }
