@@ -19,7 +19,7 @@ export class Product extends Component {
                  <Row >
                  {this.state.data.map((e) =>{
                     return(
-                    <Col lg="3" md="6" xl="3" sx="12"  className="Product-card">
+                    <Col lg="3" md="6" xl="4" sx="12"  className="Product-card">
                         <div className="product-list" id={e.id}>
                             <img onClick={() => addCart(e.id)} className="picture" src={e.picture} alt=""/>
                             <div className="name">{e.product_name}</div>

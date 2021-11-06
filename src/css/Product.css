@@ -14,7 +14,7 @@
     padding: 30px;   
 }
 .picture{
-    width: 95%;
+    width: 100%;
     justify-content: space-around;
     cursor: pointer;
 }
