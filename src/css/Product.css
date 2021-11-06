@@ -10,7 +10,7 @@
     justify-content: space-around; 
  }
 .product-list{
-    padding: 30px; 
+    padding: 30px;   
     background-color: blueviolet;  
     margin-top: 20px;
 }
@@ -22,7 +22,7 @@
 .name{
     font-family: 'Rubik';
     font-size: 15px;
-    margin-top: 10px;
+    margin-top: 10px;s
 }
 .price{
     font-family: 'Rubik', sans-serif;
