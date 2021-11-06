@@ -1,3 +1,4 @@
+/* eslint-disable array-callback-return */
 import React from "react";
 import Navbar from "../components/Navbar";
 import Cart from "../components/Cart";
