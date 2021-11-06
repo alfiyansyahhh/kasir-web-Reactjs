@@ -9,6 +9,7 @@
 .Product-card{
     width: 100%;
     justify-content: space-around; 
+    display: flex;
  }
 .product-list{
     width: 100%;
