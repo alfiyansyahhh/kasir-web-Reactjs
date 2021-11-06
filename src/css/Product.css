@@ -9,7 +9,7 @@
 .Product-card{
     width: 100%;
     justify-content: space-around; 
-    display: flex;
+  background-color: blueviolet;
  }
 .product-list{
     width: 100%;
