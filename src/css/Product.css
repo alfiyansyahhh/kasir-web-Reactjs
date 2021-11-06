@@ -9,11 +9,12 @@
 .Product-card{
     width: 100%;
     justify-content: space-around; 
-  background-color: blueviolet;
  }
 .product-list{
     width: 100%;
     padding: 30px;   
+        background-color: blueviolet;  
+    margin-top: 20px;
 }
 .picture{
     width: 25%;
