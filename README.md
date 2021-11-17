@@ -1,6 +1,6 @@
-Solarized dark             |  Solarized Ocean
-:-------------------------:|:-------------------------:
-![](https://...dark.png/)  |  ![](https://...ocean.png/)
+Solarized dark             |  Solarized Ocean            | Solarized dark             |  Solarized Ocean   |
+:-------------------------:|:-------------------------:  |:-------------------------: |:-------------------------:  |
+![](https://...dark.png/)  | ![](https://...ocean.png/)  |:-------------------------: |:-------------------------:  |
 
 
 
