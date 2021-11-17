@@ -1,8 +1,7 @@
-       screenshoot         |  screenshoot
-![](https://...dark.png/)  |  ![](https://...ocean.png/) |
+screenshoot            |  screenshoot  | screenshoot             |  screenshoot
+:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
 ![](http://gambar.alfiyansyahhh.skom.id/Screenshot%20(219).png) | ![](http://gambar.alfiyansyahhh.skom.id/Screenshot%20(220).png)  |
 ![](http://gambar.alfiyansyahhh.skom.id/Screenshot%20(221).png) | ![](http://gambar.alfiyansyahhh.skom.id/Screenshot%20(221).png)  |
-
 
 
 
