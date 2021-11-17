@@ -1,3 +1,11 @@
+Solarized dark             |  Solarized Ocean
+:-------------------------:|:-------------------------:
+![](https://...dark.png/)  |  ![](https://...ocean.png/)
+
+
+
+
+
 # Getting Started with Create React App
 
 demo https://kasir-web-reactjs.vercel.app/
