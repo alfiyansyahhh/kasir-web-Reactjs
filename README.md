@@ -1,6 +1,6 @@
 Solarized dark             |  Solarized Ocean            | Solarized dark             |  Solarized Ocean   |
 :-------------------------:|:-------------------------:  |:-------------------------: |:-------------------------:  |
-![](https://...dark.png/)  | ![](https://...ocean.png/)  |:-------------------------: |:-------------------------:  |
+![](http://gambar.alfiyansyahhh.skom.id/Screenshot%20(219).png)  | ![](http://gambar.alfiyansyahhh.skom.id/Screenshot%20(220).png)  |:-------------------------: |:-------------------------:  |
 
 
 
