@@ -1,4 +1,3 @@
-Solarized dark             |  Solarized Ocean            | Solarized dark             |  Solarized Ocean   |
 :-------------------------:|:-------------------------:  |:-------------------------: |:-------------------------:  |
 ![](http://gambar.alfiyansyahhh.skom.id/Screenshot%20(219).png)  | ![](http://gambar.alfiyansyahhh.skom.id/Screenshot%20(220).png)  |![](http://gambar.alfiyansyahhh.skom.id/Screenshot%20(221).png) |![](http://gambar.alfiyansyahhh.skom.id/Screenshot%20(221).png)  |
 
