@@ -1,8 +1,12 @@
 [Demo](http://kasir.alfiyansyahhh.skom.id)
 
-screenshoot            |  screenshoot  |  screenshoot             |   screenshoot             |
-:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
-![](http://gambar.alfiyansyahhh.skom.id/Screenshot%20(219).png) | ![](http://gambar.alfiyansyahhh.skom.id/Screenshot%20(221).png) |  ![](http://gambar.alfiyansyahhh.skom.id/Screenshot%20(1).png)  |  ![](http://gambar.alfiyansyahhh.skom.id/Screenshot%20(5).png)
+screenshoot            |  screenshoot  | 
+:-------------------------:|:-------------------------:|
+![](http://gambar.alfiyansyahhh.skom.id/Screenshot%20(219).png) | ![](http://gambar.alfiyansyahhh.skom.id/Screenshot%20(221).png) |
+
+ screenshoot             |   screenshoot             |
+ :-------------------------:|:-------------------------:|
+![](http://gambar.alfiyansyahhh.skom.id/Screenshot%20(1).png)  |  ![](http://gambar.alfiyansyahhh.skom.id/Screenshot%20(5).png)
 
 
 
