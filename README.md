@@ -1,5 +1,7 @@
-Demo: [klik Me](http://kasir.alfiyansyahhh.skom.id)
-Backend: [klik Me](http://kasir.alfiyansyahhh.skom.id)
+Demo: [Here](http://kasir.alfiyansyahhh.skom.id)
+
+
+Backend: [Here](http://kasir.alfiyansyahhh.skom.id)
 
 
 screenshoot            |  screenshoot  | screenshoot             |  screenshoot
@@ -11,8 +13,6 @@ screenshoot            |  screenshoot  | screenshoot             |  screenshoot
 
 
 # Getting Started with Create React App
-
-demo https://kasir-web-reactjs.vercel.app/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
