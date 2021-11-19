@@ -82,6 +82,6 @@ screenshoot            |  screenshoot  |
 
 alfiyansyah - alfiyansyahhh@gmail.com
 
-Project Link: https://github.com/alfiyansyahhh/kasir-web-Reactjs](https://github.com/alfiyansyahhh/kasir-web-Reactjs)
+Project Link: [https://github.com/alfiyansyahhh/kasir-web-Reactjs](https://github.com/alfiyansyahhh/kasir-web-Reactjs)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
